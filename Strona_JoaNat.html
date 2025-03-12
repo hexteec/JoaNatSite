@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JoaNat - Biuro Rachunkowości</title>
+    <style>
+        body{
+            background-color: rgb(41, 60, 77);
+            background-image: url(BGz.jpg);
+            background-size: cover;
+        }
+        #header{
+            width: 100%;
+            height: 80px;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.205);
+            left: 0px;
+            top: 0px;
+        }
+        #obrazMain{
+            background-image: url(obrazMain.jpg);
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            background-size: cover;
+            background-position: 0px;
+            top: 0px;
+            left: 0px;
+        }
+        #obrazBlur{
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.39);
+            filter: blur(10px);
+        }
+        #linearB{
+            top: 50%;
+            height: 100px;
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            background-color: rgb(26, 26, 26);
+        }
+        #Main{
+            background-color: rgba(41, 60, 77, 0.95);
+            width: 100%;
+            height: 280%;
+            position: absolute;
+            left: 0px;
+            top: 60%;
+        }
+        .tekst{
+            position: absolute;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 100;
+            letter-spacing: 2px;
+        }
+        .tekst{
+            color: rgb(192, 192, 192);
+            top: 10%;
+        }
+        #nazwaM{
+            left: 41%;
+            top: -60%;
+            background-size: contain;
+            width: 300px;
+        }
+        #nazwaM2{
+            left: 42.3%;
+            top: 0%;
+            background-size: contain;
+            width: 200px;
+        }
+        #numerM{
+            left: 25%;
+            font-size: 110%;
+        }
+        #emailM{
+            left: 10%;
+            font-size: 110%;
+        }
+        #adresM{
+            left: 64%;
+            font-size: 110%;
+        }
+        #biuroM{
+            left: 42%;
+            font-size: 130%;
+        }
+        #uslugiM{
+            left: 45%;
+            font-size: 200%;
+            top: 7%;
+            letter-spacing: 4px;
+        }
+        #wspolpracaM{
+            left: 45%;
+            font-size: 200%;
+            top: 52%;
+            letter-spacing: 4px;
+        }
+        #kontaktM2{
+            left: 45%;
+            font-size: 200%;
+            top: 80%;
+            letter-spacing: 4px;
+        }
+        #k1,#k2,#k3,#k4,#k5,#k6,#k7,#k8{
+            position: absolute;
+            width: 35%;
+            height: 3px;
+            background-color: rgb(41, 60, 77);
+            border: 0;
+        }
+        #k1{
+            left: 5%;
+            top: 60%;
+        }
+        #k2{
+            left: 58%;
+            top: 60%;
+        }
+        #k3{
+            background-color: rgb(192, 192, 192);
+            left: 31%;
+            top: 90%;
+        }
+        #k4{
+            background-color: rgb(192, 192, 192);
+            left: 31%;
+            top: 0%;
+        }
+        #k5{
+            background-color: rgb(192, 192, 192);
+            left: 15%;
+            top: 10%;
+            width: 70%;
+        }
+        #k6{
+            background-color: rgb(192, 192, 192);
+            left: 15%;
+            top: 50%;
+            width: 70%;
+        }
+        #k7{
+            background-color: rgb(192, 192, 192);
+            left: 15%;
+            top: 55%;
+            width: 70%;
+        }
+        #k8{
+            background-color: rgb(192, 192, 192);
+            left: 15%;
+            top: 83%;
+            width: 70%;
+        }
+        .karta{
+            position: absolute;
+            width: 30%;
+            height: 1000px;
+            background-color: rgb(26, 26, 26);
+        }
+        #karta1{
+            top: 11.5%;
+            left: 10%;
+            right: 10%;
+            width: 80%;
+        }
+        #karta2{
+            top: 56.7%;
+            left: 10%;
+            right: 10%;
+            width: 80%;
+            height: 500px;
+        }
+        #karta3{
+            top: 84.7%;
+            left: 10%;
+            right: 10%;
+            width: 80%;
+            height: 500px;
+        }
+        .kartaHeader{
+            background-color: aliceblue;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 20%;
+        }
+        .chainImg{
+            position: absolute;
+            width: 100%;
+            background-repeat: repeat;
+            opacity: 0.6;
+        }
+        .kartyUslug{
+            position: absolute;
+            width: 25%;
+            height: 400px;
+            background-color: rgb(41, 41, 41);
+            text-align: center;
+            align-items: center;
+        }
+        #kh,#kpir,#ep{
+            top: 5%;
+        }
+        #kh{
+            left: 7%;
+        }
+        #kpir{
+            left: 36%;
+        }
+        #ep{
+            left: 65%;
+        }
+        #ev,#okp{
+            top: 55%;
+        }
+        #ev{
+            left: 22%;
+        }
+        #okp{
+            left: 51%;
+        }
+        #pdpe{
+            left: 7%;
+            top: 10%;
+        }
+        #zpnskk{
+            left: 36%;
+            top: 10%;
+        }
+        #tpzprmhdpk{
+            left: 65%;
+            top: 10%;
+        }
+        #nt{
+            left: 7%;
+            top: 10%;
+        }
+        #mp{
+            left: 36%;
+            top: 10%;
+        }
+        #pt{
+            left: 65%;
+            top: 10%;
+        }
+        #tytul{
+            position: relative;
+            font-size: 160%;
+            color: white;
+            top: 3%;
+        }
+        #tresc{
+            position: relative;
+            font-size: large;
+        }
+        #tresc>b{
+            letter-spacing: 1px;
+            font-size: 110%;
+            color: white;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        #tresc{
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="linearB"><h4 class="tekst" id="biuroM">Biuro Rachunkowości</h4></div>
+    <div id="obrazMain">
+        <div id="obrazBlur"></div>
+    </div>    
+    <div id="header">
+        <img class="tekst" src="JoaNatLogo1.png" id="nazwaM">
+        <h4 class="tekst" id="numerM">48+ 602588440</h4>
+        <h4 class="tekst" id="emailM">br.joanat@gmail.com</h4>
+        <h4 class="tekst" id="adresM">21-500 Biała Podlaska ul. Wesoła 7a</h4>
+        <hr id="k1">
+        <hr id="k2">
+        <hr id="k3">
+    </div>
+    <div id="Main"><hr id="k4">
+        <img src="chainBg2.png" style="top: 2%;" class="chainImg">
+        <img class="tekst" src="JoaNatLogo1.png" id="nazwaM2">
+        <h4 class="tekst" id="uslugiM">Usługi</h4>
+        <hr id="k5">
+        <div class="karta" id="karta1">
+            <div id="kh" class="kartyUslug">
+                <h2 class="tekst" id="tytul">ksiąg handlowych</h2>
+                <h4 class="tekst" id="tresc"><b>Pełna księgowość dla firm</b>,<br> obejmująca <br> ewidencję operacji finansowych,<br> sporządzanie bilansów,<br> rachunków zysków i strat <br> oraz <br> deklaracji podatkowych.
+                </h4>
+            </div>
+            <div id="kpir" class="kartyUslug">
+                <h2 class="tekst" id="tytul">księgi przychodów i rozchodów</h2>
+                <h4 class="tekst" id="tresc"><b>Prosta forma księgowości</b><br> dla <br> małych firm i jednoosobowych działalności, umożliwiająca rozliczanie przychodów i kosztów działalności.
+                </h4>
+            </div>
+            <div id="ep" class="kartyUslug">
+                <h2 class="tekst" id="tytul">ewidencji przychodów (ryczałt)</h2>
+                <h4 class="tekst" id="tresc"><b>Obsługa podatników rozliczających się ryczałtem ewidencjonowanym,</b> obejmująca prowadzenie ewidencji i rozliczanie należnych podatków.
+                </h4>
+            </div>
+            <hr id="k6">
+            <div id="ev" class="kartyUslug">
+                <h2 class="tekst" id="tytul">ewidencji VAT</h2>
+                <h4 class="tekst" id="tresc"><b>Prowadzenie</b> rejestrów VAT,<b>sporządzanie</b> deklaracji i plików JPK, a także <b>kontrola</b> poprawności transakcji pod kątem podatku od towarów i usług.
+                </h4>
+            </div>
+            <div id="okp" class="kartyUslug">
+                <h2 class="tekst" id="tytul">obługi kadrowo płacowej</h2>
+                <h4 class="tekst" id="tresc"><b>Kompleksowa administracja <br> kadrowa i płacowa,</b><br> obejmująca <br> sporządzanie umów, <br> naliczanie wynagrodzeń, <br> rozliczenia z ZUS <br> oraz <br> prowadzenie akt pracowniczych.
+                </h4>
+            </div>
+        </div>
+        <img src="chainBg2.png" style="top: 48%;" class="chainImg">
+        <h4 class="tekst" id="wspolpracaM">Współpraca</h4>
+        <hr id="k7">
+        <div class="karta" id="karta2" style="background-color: white;">
+            <div id="pdpe" class="kartyUslug">
+                <h2 class="tekst" id="tytul">Przesyłanie dokumentów pocztą elektroniczną</h2>
+                <h4 class="tekst" id="tresc">Wygodna i bezpieczna forma dostarczania dokumentów księgowych za pomocą e-maila, eliminująca konieczność wizyt w biurze.
+                </h4>
+            </div>
+            <div id="zpnskk" class="kartyUslug">
+                <h2 class="tekst" id="tytul">Zdalna praca na systemach komputerowych klienta</h2>
+                <h4 class="tekst" id="tresc">Możliwość bezpośredniego księgowania i obsługi<br> dokumentacji na systemach klienta, co zapewnia bieżącą kontrolę i aktualność danych.
+                </h4>
+            </div>
+            <div id="tpzprmhdpk" class="kartyUslug">
+                <h2 class="tekst" id="tytul">Transfer plików z programu magazynowo-handlowego do programu księgowego</h2>
+                <h4 class="tekst" id="tresc">Automatyzacja procesu księgowania dzięki integracji systemów, zapewniająca szybki i dokładny przepływ danych.
+                </h4>
+            </div>
+        </div>
+        <img src="chainBg2.png" style="top: 75.5%;" class="chainImg">
+        <h4 class="tekst" id="kontaktM2">Kontakt</h4>
+        <hr id="k8">
+        <div class="karta" id="karta3">
+            <div id="pt" class="kartyUslug">
+                <h2 class="tekst" id="tytul">Kontakt telefoniczny</h2>
+                <h4 class="tekst" id="tresc"><b style="font-size: 140%; letter-spacing: 2px;"><i style="font-size: 80%; color: rgb(192, 192, 192);">48+</i>   602 588 440</b><br>Szybka i bezpośrednia forma kontaktu w celu uzyskania informacji lub umówienia spotkania.
+                </h4>
+            </div>
+            <div id="mp" class="kartyUslug">
+                <h2 class="tekst" id="tytul">Spotkanie w biurze</h2>
+                <h4 class="tekst" id="tresc">
+                    21-500 Biała Podlaska ul. Wesoła 7a
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d433.9871822660306!2d23.14102825791013!3d52.025056947321914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472190df4d167bd7%3A0xc95fda591da99b25!2sWeso%C5%82a%207A%2C%2021-500%20Bia%C5%82a%20Podlaska!5e0!3m2!1spl!2spl!4v1741695940510!5m2!1spl!2spl" 
+                        width="375" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </h4>
+            </div>
+            <div id="nt" class="kartyUslug">
+                <h2 class="tekst" id="tytul">Kontakt mailowy</h2>
+                <h4 class="tekst" id="tresc"><b style="font-size: 140%; letter-spacing: 2px;">e.jewtoszuk@gmail.com</b><br>Możliwość przesyłania zapytań i dokumentów drogą elektroniczną, z gwarancją sprawnej odpowiedzi.
+                </h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
